@@ -687,7 +687,6 @@ begin
     Exit;
 
   {perform the required rounding}
-  AddOne := false;   // keep the compiler happy
   case aRound of
     rmNormal :
       begin

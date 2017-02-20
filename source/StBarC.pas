@@ -1926,7 +1926,6 @@ var
   S    : string;
 begin
   FillChar(bcDigits, SizeOf(bcDigits), #0);
-  Result := 0;
 
   case FBarCodeType of
     bcUPC_A, bcUPC_E, bcEAN_8, bcEAN_13, bcInterleaved2of5 :
