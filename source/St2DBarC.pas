@@ -1170,6 +1170,9 @@ var
   PaintHeight   : Integer;
 
 begin
+  XPos := 0;
+  YPos := 0;
+
   { Initialize the canvas }
   FBitmap.Width := BCWidth;
   FBitmap.Height := BCHeight;
@@ -3648,6 +3651,8 @@ var
   OldLevel : Integer;
 
 begin
+  NewLevel := 0;
+
   case v of
     ecAuto   : NewLevel := -1;
     ecLevel0 : NewLevel := 0;

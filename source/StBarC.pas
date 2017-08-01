@@ -1925,6 +1925,8 @@ var
   I, J : Integer;
   S    : string;
 begin
+  Result := 0;
+
   FillChar(bcDigits, SizeOf(bcDigits), #0);
 
   case FBarCodeType of
