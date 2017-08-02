@@ -64,9 +64,9 @@ protected:
 	HKEY riHoldPrimary;
 	HKEY riPrimaryKey;
 	HKEY riRemoteKey;
-	System::WideChar *riCurSubKey;
-	System::WideChar *riTrueString;
-	System::WideChar *riFalseString;
+	System::UnicodeString riCurSubKey;
+	System::UnicodeString riTrueString;
+	System::UnicodeString riFalseString;
 	_RTL_CRITICAL_SECTION riThreadSafe;
 	_SECURITY_ATTRIBUTES __fastcall GetAttributes(void);
 	void __fastcall SetAttributes(const _SECURITY_ATTRIBUTES &Value);
@@ -77,7 +77,7 @@ protected:
 	System::UnicodeString FCurSubKey;
 	_SECURITY_ATTRIBUTES FriSecAttr;
 	bool FIsIniFile;
-	System::WideChar *riRootName;
+	System::UnicodeString riRootName;
 	Vcl::Graphics::TBitmap* BmpText;
 	Vcl::Graphics::TBitmap* BmpBinary;
 	HKEY __fastcall OpenRegKey(void);
